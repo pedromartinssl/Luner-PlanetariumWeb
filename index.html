@@ -5,31 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/icon-aba.svg.svg">
     <title>Luner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <header class="bg-indigo-200 flex  justify-between  gap-40 p-5 m-8 rounded-xl">
+<body class="font-[Noto_Sans]">
+    <header class="bg-indigo-200 flex justify-around gap-40 p-2 m-8 rounded-xl">
         <div class="flex">
             <figure><img src="img/logo-header.png" alt="Logo Planetarium Web"></figure>
         </div>
-        <div class="flex justify-end items-center ">
-            <ul class="flex flex-row gap-8">
-                <li><a href="#"></a>Home</li>
+        <div class="flex justify-center">
+            <ul class="flex flex-row gap-8 items-center">
+                <li  class="font-bold underline"><a href="#"></a>Home</li>
                 <li><a href="#"></a>Login</li>
                 <li><a href="#"></a>Cadastro</li>
-                <li><a href="#"></a>Entrar</li>
+                <li class="bg-blue-800 text-white py-3 px-5 rounded-xl"><a href="#"></a>Entrar</li>
             </ul>
         </div>
     </header>
     <main>
-        <section>
-
+        <section class="text-white bg-blue-800 m-8 p-28 flex flex-col items-center rounded-xl">
+            <h1 class="font-bold text-2xl ">Bem-vindo ao Luner!</h1>
+            <p class=" p-10 text-xl text-center">Plataforma Planetarium Web: transforme sua vida pelos estudos com gamificação adaptada às suas metas (vestibulares, concursos etc.), potencializando seu desempenho.</p>
+            <button class=" bg-blue-600 py-3 px-5 rounded-xl"><a href="#"></a>Crie sua conta</button>
         </section>
-        <section
-        ></section>
+        <section class="flex flex-row text-center justify-center gap-7 m-8">
+            <div class="bg-gray-200 p-10 w-100 h-100 rounded-xl">
+                <h1 class="text-2xl font-bold p-10">+ 500 estudantes</h1>
+                <span class="text-xl">já testaram a nossa plataforma e comprovam o seu funcionamento</span>
+            </div>
+            <div class="bg-gray-200 p-10 w-100 h-100 rounded-xl">
+                <h1 class="text-2xl font-bold p-10">+ 20 profissionais</h1>
+                <span class="text-xl">te esperam para potencializar os seus estudos </span>
+            </div>
+            <div class="bg-gray-200 p-10 w-100 h-100 rounded-xl">
+                <h1 class="text-2xl font-bold p-10">+ 10 matérias</h1>
+                <span class="text-xl">disponíveis na plataforma para você ampliar o seu conhecimento</span>
+            </div>
+        </section>
     </main>
-    <footer>
-        
+    <footer class="bg-indigo-200 flex justify-around">
+        <div>
+            <figure><img src="img/icon-footer.png" alt="Logo Planetarium Web"></figure>
+        </div>
+        <div class="flex items-center">
+            <ul class="flex-row flex gap-10">
+                <li><p>Rua Brusque, 2926, Natal - RN</p></li>
+                <li><a href="https://portal.ifrn.edu.br"></a>https://portal.ifrn.edu.br</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
