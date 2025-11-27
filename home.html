@@ -10,41 +10,59 @@
     <!--Código da fonte NotoSans-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!--CDN do Tailwind CSS-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!--CDN do DaisyUI-->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body class="font-[Noto_Sans]">
 
-    <header class="bg-indigo-200 flex justify-around gap-100 pb-5 pt-5 ml-25 mr-25 mb-12 mt-10 rounded-xl">
-        <div class="flex">
+    <header class="bg-indigo-200 flex-row flex  p-15  md:m-25 mb-12 md:mt-12 md:rounded-xl md:max-w-7xl">
+        <div class="">
             <figure><img src="img/logo-header.png" alt="Logo Planetarium Web"></figure>
         </div>
-        <div class="flex justify-center">
-            <ul class="flex flex-row gap-8 items-center">
-                <li><a role="button" href="home.html" class="font-bold underline">Home</a></li>
-                <li><a role="button" href="login.html">Login</a></li>
-                <li><a role="button" href="cadastro.html">Cadastro</a></li>
-                <li><a role="button" href="#" class="btn bg-blue-900 text-white rounded-xl px-6 py-7">Entrar</a></li>
-            </ul>
-        </div>
+        <nav>
+            <menu class="flex justify-center pt-6 flex-row-reverse items-center">
+                <details class="dropdown md:hidden">
+                    <summary class="btn m-1 bg-sky-400">Menu</summary>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                        <li><a role="button" href="home.html" class="font-bold underline">Home</a></li>
+                        <li><a role="button" href="login.html">Login</a></li>
+                        <li><a role="button" href="login.html">Alunos</a></li>
+                        <li><a role="button" href="cadastro.html">Cadastro</a></li>
+                        <li><a role="button" href="#" class="btn bg-blue-900 text-white rounded-xl px-6 py-7">Entrar</a></li>
+                    </ul>
+                  </details>
+                    <ul class="hidden md:flex flex-row gap-8 items-center">
+                        <li><a role="button" href="home.html" class="font-bold underline">Home</a></li>
+                        <li><a role="button" href="login.html">Login</a></li>
+                        <li><a role="button" href="cadastro.html">Cadastro</a></li>
+                        <li><a role="button" href="#" class="btn bg-blue-900 text-white rounded-xl px-6 py-7">Entrar</a></li>
+                    </ul>
+            </menu>
+        </nav>
+
     </header>
 
-    <main class="ml-25 mr-25">
+    <main class="md:ml-25 md:mr-25">
         <section class="text-white bg-blue-900 p-50 flex flex-col items-center rounded-xl">
             <h1 class="font-bold text-5xl">Bem-vindo ao Luner!</h1>
-            <p class=" pt-15 pb-11 text-3xl font-light leading-normal text-center">Plataforma Planetarium Web: transforme sua vida pelos estudos com
+            <p class=" pt-15 pb-11 text-3xl font-light leading-normal text-center">Plataforma Planetarium Web:
+                transforme sua vida pelos estudos com
                 gamificação adaptada às suas metas (vestibulares, concursos etc.), potencializando seu desempenho.</p>
-                <button class="btn btn-info btn-lg rounded-xl text-white"><a href="cadastro.html">Crie sua conta</a></button>
+            <button class="btn btn-info btn-lg rounded-xl text-white"><a href="cadastro.html">Crie sua
+                    conta</a></button>
         </section>
-        <section class="flex flex-row text-center gap-8 justify-between mt-12 mb-12">
+
+        <section class="flex-col flex md:flex-row text-center gap-8 justify-between mt-12 mb-12">
             <div class="flex justify-center items-center bg-gray-200 flex-col p-10 w-full h-125 rounded-xl">
                 <h1 class="text-4xl font-bold pb-12">+ 500 estudantes</h1>
-                <span class="text-2xl leading-normal">já testaram a nossa plataforma e comprovam o seu funcionamento</span>
+                <span class="text-2xl leading-normal">já testaram a nossa plataforma e comprovam o seu
+                    funcionamento</span>
             </div>
             <div class="flex justify-center items-center bg-gray-200 flex-col p-10 w-full h-125 rounded-xl">
                 <h1 class="text-4xl font-bold pb-12">+ 20 profissionais</h1>
@@ -52,17 +70,18 @@
             </div>
             <div class="flex justify-center items-center bg-gray-200 flex-col p-10 w-full h-125 rounded-xl">
                 <h1 class="text-4xl font-bold pb-12">+ 10 matérias</h1>
-                <span class="text-2xl leading-normal">disponíveis na plataforma para você ampliar o seu conhecimento</span>
+                <span class="text-2xl leading-normal">disponíveis na plataforma para você ampliar o seu
+                    conhecimento</span>
             </div>
         </section>
     </main>
 
-    <footer class="bg-indigo-200 gap-100 flex justify-around">
-        <div>
+    <footer class="bg-indigo-200 flex-col flex items-center pb-6">
+        <div class="flex items-center pb-5">
             <figure><img src="img/icon-footer.png" alt="Logo Planetarium Web"></figure>
         </div>
-        <div class="flex items-center">
-            <ul class="flex-row flex gap-10">
+        <div class="flex flex-col items-center">
+            <ul class="flex gap-6 flex-col justify-center items-center">
                 <li>
                     <p>Rua Brusque, 2926, Natal - RN</p>
                 </li>
